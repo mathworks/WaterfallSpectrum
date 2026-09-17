@@ -1,6 +1,5 @@
 # UI Waterfall Spectrum
-[![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)]
-(https://matlab.mathworks.com/open/github/v1?repo=mathworks/WaterfallSpectrum)
+[![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/WaterfallSpectrum)
 [![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://matlab.mathworks.com/open/fileexchange/v1?id=FILE_EXCHANGE_ID)
 
 <img src="docs/images/WaterfallSpectrum_icon.png" alt="UI Waterfall Spectrum component icon" width="128">
