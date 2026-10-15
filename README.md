@@ -1,6 +1,5 @@
 # UI Waterfall Spectrum
-[![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/WaterfallSpectrum)
-[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://matlab.mathworks.com/open/fileexchange/v1?id=FILE_EXCHANGE_ID)
+[![Open in MATLAB&reg; Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=kevinholly/WaterfallSpectrum)
 
 <img src="docs/images/WaterfallSpectrum_icon.png" alt="UI Waterfall Spectrum component icon" width="128">
 
@@ -54,6 +53,40 @@ spectra with the newest spectrum at the top.
 
 ## Setup
 
+Choose the file format for your MATLAB release:
+
+| MATLAB release | Files to use |
+| --- | --- |
+| R2026b or newer | The text versions in [`R2026b/`](R2026b/README.md). |
+| R2026a | The original `.mlapp` files in this folder. Earlier releases have not been tested. |
+
+`R2026b/uiWaterfallSpectrum.m` is a code-only component class for editing in
+the MATLAB Editor. The original `uiWaterfallSpectrum.mlapp` remains the
+visual component design source. The text demo consists of
+`uiWaterfallSpectrum_demo.m` and its companion `.xml` file; keep both files
+together for running and App Designer editing.
+
+Choose one version per MATLAB session. Restart MATLAB when switching
+versions, and avoid recursively adding this repository with `genpath`.
+MATLAB's Current Folder takes precedence over other folders on the path.
+
+### R2026b Text Versions
+
+Set the `R2026b` folder as MATLAB's Current Folder and run:
+
+```matlab
+cd("path/to/WaterfallSpectrum/R2026b")
+addpath(pwd)
+uiWaterfallSpectrum_demo
+```
+
+The folder includes the loader, standalone plotting function, button icon,
+and component metadata. The sample `signal_data.csv` stays in the repository
+root and is shared by both versions. Restart App Designer to refresh its
+Component Library. See the [R2026b guide](R2026b/README.md).
+
+### Original App Designer Files
+
 1. Download and extract the submission. Keep `uiWaterfallSpectrum.mlapp` and
    the generated `resources` folder together in the submission root.
 2. Add its root folder to the MATLAB path. For a manually downloaded copy:
@@ -72,12 +105,16 @@ spectra with the newest spectrum at the top.
 
 ## Run the Demo
 
-Open `uiWaterfallSpectrum_demo.mlapp` in App Designer and click **Run**, or
-launch it from the MATLAB Command Window:
+After selecting a version above, launch the demo from the MATLAB Command
+Window:
 
 ```matlab
 uiWaterfallSpectrum_demo
 ```
+
+For visual editing, open the original `uiWaterfallSpectrum_demo.mlapp` or
+the R2026b demo's `.m` file in App Designer. The text demo also needs its
+companion XML file when launched from the Command Window.
 
 <img src="docs/images/uiWaterfallSpectrum_demo_screenshot.png" alt="UI Waterfall Spectrum demo streaming signal data from a CSV file" width="720">
 
@@ -243,7 +280,8 @@ Requires MATLAB with App Designer. No additional MathWorks&reg; toolboxes are
 required.
 
 The component and demo were developed and tested with MATLAB R2026a. Earlier
-releases have not been tested.
+releases have not been tested. The text versions in `R2026b/` require MATLAB
+R2026b or newer.
 
 ### System Requirements
 
